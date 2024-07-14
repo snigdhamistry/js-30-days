@@ -1,1 +1,1 @@
-# js-30-days
+js 30 days challange
