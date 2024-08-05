@@ -48,7 +48,11 @@ let defaultfunction = (a,b=5)=>{
     return a*b
 }
 console.log(defaultfunction(2))
-
+//T8
+function person(names,ages=18) {
+    return `hi ${names} you are ${ages} nice to meet you `
+}
+console.log(person("snigdha"));
 
 
 
