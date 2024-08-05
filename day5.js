@@ -30,13 +30,20 @@ function concatinate(string1,strings) {
 }
 console.log(`hi there, ${concatinate('myself ' ,'Snigdha')}`);
 
-//Activity 4:
+//Activity 3:
 //T5
+let arrowfunction=(num1,num2)=>{
+    return num1+num2
+}
+console.log(`value of arrow function is ${arrowfunction(3,2)}`);
+//T6
+let checkstring = (string)=>{
+    return string.includes("i")
+}//we can aachive the same result using the explicit return
+console.log(checkstring("snigdha"));
 
-
-
-
-
+//Activity 4:
+//T7
 
 
 
