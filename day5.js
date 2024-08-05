@@ -44,7 +44,10 @@ console.log(checkstring("snigdha"));
 
 //Activity 4:
 //T7
-
+let defaultfunction = (a,b=5)=>{
+    return a*b
+}
+console.log(defaultfunction(2))
 
 
 
