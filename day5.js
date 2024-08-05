@@ -54,5 +54,33 @@ function person(names,ages=18) {
 }
 console.log(person("snigdha"));
 
+//Activity 5:
+//T9
+function callntimes(func,n) {
+    return function () {
+        for (let i = 0; i < n; i++) {
+            func()
+        }
+    }
+}
+function sayhello() {
+    console.log("hello");
+}
+const sayhello5times = callntimes(sayhello,5)
+sayhello5times()
+//T10 
+function composeTwo(func1, func2, value) {
+    return func2(func1(value));
+}
 
+// Example usage:
+function add3(x) {
+    return x + 3;
+}
 
+function multiplyBy2(x) {
+    return x * 2;
+}
+
+const result = composeTwo(add3, multiplyBy2, 5);
+console.log(result);  // This will log 16 because (5 + 3) * 2 = 16
